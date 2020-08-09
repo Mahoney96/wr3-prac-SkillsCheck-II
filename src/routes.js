@@ -1,3 +1,12 @@
 import React from 'react';
-import {Swtich, Route} from 'react-router-dom';
-import 
+import {Switch, Route} from 'react-router-dom';
+import Home from './Components/Home/Home';
+import TopicList from './Components/TopicList/TopicList';
+
+
+export default (
+    <Switch>
+        <Route exact path='/' component={Home}/>
+        <Route path='/topics' component={TopicList} />
+    </Switch>
+);
